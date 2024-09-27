@@ -21,7 +21,7 @@ disp(['电磁转矩 Te 的绝对值最大值为: ', num2str(max_abs_Te), ' N?m']);
 disp(['发生在时间: ', num2str(max_time), ' s']);
 disp(['电阻温度为: ', num2str(result_powered), ' ℃']);
 
-function [max_abs_Te,max_time,result_powered]=NengHaoZhiDong(c_e,c_T,a,b,R,rou,D1_out,t1,D1_in,pi_val,W1)
+function [max_abs_Te,max_time,result_powered]=NengHaoZhiDong(c_e,c_T,a,b,R,rou,D1_out,D1_in,pi_val,W1)
 syms theta(t) t
 I_p1 = pi_val / 32 * (D1_out^4 - D1_in^4); % 抽油杆极惯性矩, m^4
 % 计算中间量
