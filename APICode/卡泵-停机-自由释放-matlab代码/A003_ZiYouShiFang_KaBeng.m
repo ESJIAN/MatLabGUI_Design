@@ -9,6 +9,7 @@ disp(['总制动时间为: ', num2str(tt3),' s']);
 disp(['最大反转速度为: ', num2str(vv3),' rad/s']);
 function [v]=ZhiDongSuDu(L,m,miu)
 
+
 %50mPas-500m-900m-1300m-2000m-3000m
 v11=11.2236-11.038*m;
 v12=12.3301-12.126*m;
